@@ -29,6 +29,8 @@ namespace Lotto3
         private void resetBtn_Click(object sender, RoutedEventArgs e)
         {
             Label1.Content = Label2.Content = Label3.Content = Label4.Content = Label5.Content = Label6.Content = "  ---  ";
+
+            resetBtn.IsEnabled = false;
         }
 
         private void getBtn_Click(object sender, RoutedEventArgs e)
@@ -43,6 +45,8 @@ namespace Lotto3
             Label4.Content = digits[3];
             Label5.Content = digits[4];
             Label6.Content = digits[5];
+
+            resetBtn.IsEnabled = true;
         }
     }
 }

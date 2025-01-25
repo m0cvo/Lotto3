@@ -5,17 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lotto3"
         mc:Ignorable="d"
-        Title="Lotto" Height="450" Width="800">
-    <Grid Margin="10">
-        <Label x:Name="Label1" Content="  ---  " HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red"/>
-        <Label x:Name="Label2" Content="  ---  " HorizontalAlignment="Left" Margin="444,78,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red"/>
-        <Label x:Name="Label3" Content="  ---  " HorizontalAlignment="Left" Margin="518,78,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red"/>
-        <Label x:Name="Label4" Content="  ---  " HorizontalAlignment="Left" Margin="589,78,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red"/>
-        <Label x:Name="Label5" Content="  ---  " HorizontalAlignment="Left" Margin="660,78,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red"/>
-        <Label x:Name="Label6" Content="  ---  " HorizontalAlignment="Left" Margin="732,78,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red"/>
-        <Button x:Name="getBtn" Content="Get Your Lucky Numbers" HorizontalAlignment="Left" Margin="371,150,0,0" VerticalAlignment="Top" Height="30" Click="getBtn_Click"/>
-        <Button x:Name="resetBtn" Content="Reset" HorizontalAlignment="Left" Margin="537,150,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="resetBtn_Click"/>
-        <Button x:Name="exitBtn" Content="Close" HorizontalAlignment="Left" Margin="670,150,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="exitBtn_Click"/>
+        Title="Lotto" Height="450" Width="469">
+    <Grid Margin="10" Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="171*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="185*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="Label1" Content="  ---  " HorizontalAlignment="Left" Margin="51,98,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red" Width="45" Height="26"/>
+        <Label x:Name="Label2" Content="  ---  " HorizontalAlignment="Left" Margin="118,98,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red" Width="44" Height="26"/>
+        <Label x:Name="Label3" Content="  ---  " HorizontalAlignment="Left" Margin="185,98,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red" Width="45" Height="26"/>
+        <Label x:Name="Label4" Content="  ---  " HorizontalAlignment="Left" Margin="252,98,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red" Width="45" Height="26"/>
+        <Label x:Name="Label5" Content="  ---  " HorizontalAlignment="Left" Margin="309,98,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red" Width="45" Height="26"/>
+        <Label x:Name="Label6" Content="  ---  " HorizontalAlignment="Left" Margin="366,98,0,0" VerticalAlignment="Top" BorderBrush="#FF051FF7" Background="Red" Width="45" Height="26"/>
+        <Button x:Name="getBtn" Content="Get Your Lucky Numbers" HorizontalAlignment="Left" Margin="35,73,0,0" VerticalAlignment="Top" Height="30" Click="getBtn_Click" Grid.Row="2" Width="134"/>
+        <Button x:Name="resetBtn" Content="Reset" HorizontalAlignment="Left" Margin="192,73,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="resetBtn_Click" Grid.Row="2" IsEnabled="False"/>
+        <Button x:Name="exitBtn" Content="Close" HorizontalAlignment="Left" Margin="316,73,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="exitBtn_Click" Grid.Row="2"/>
+        <Image x:Name="picture" HorizontalAlignment="Left" Height="77" Margin="39,171,0,0" VerticalAlignment="Top" Width="249" Source="/lotto-1.bmp" Grid.RowSpan="3"/>
 
 
     </Grid>

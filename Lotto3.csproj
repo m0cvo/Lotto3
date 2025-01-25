@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="lotto-1.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="lotto-1.bmp" />
+  </ItemGroup>
+
 </Project>
