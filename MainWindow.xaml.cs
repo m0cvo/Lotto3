@@ -37,7 +37,7 @@ namespace Lotto3
         {
             Random rand = new Random();
 
-            int[] digits = new int[6] { rand.Next() % 59, rand.Next() % 59, rand.Next() % 59, rand.Next() % 59, rand.Next() % 59, rand.Next() % 59 };
+            int[] digits = new int[6] { rand.Next() % 58, rand.Next() % 59, rand.Next() % 59, rand.Next() % 59, rand.Next() % 59, rand.Next() % 59 };
 
             Label1.Content = digits[0];
             Label2.Content = digits[1];
